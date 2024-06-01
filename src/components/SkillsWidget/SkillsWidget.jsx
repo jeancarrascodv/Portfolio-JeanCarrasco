@@ -8,7 +8,7 @@ import Image from "next/image";
 const SkillsWidget = ({ title, content, skills }) => {
   return (
     //Write your code here
-    <section data-testid="skillsWidget" className="skills-widget">
+    <section data-testid="skillsWidget" className="skills-widget sm:max-w-sm">
       <h2 data-testid="skillsWidgetTitle">{title}</h2>
       <p data-testid="skillsWidgetContent">{content}</p>
 

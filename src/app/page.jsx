@@ -49,7 +49,8 @@ export default function Home() {
   let myArray = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact" },
+    { path: "/projects", label: "Projects" },
+    { path: "/uses", label: "Uses" },
   ];
   //----------------------------------------------------------------------------------------------------
   const myExperience = [
@@ -109,14 +110,14 @@ export default function Home() {
     },
   ];
   //----------------------------------------------------------------------------------------------------
-
+//space-y-6
   return (
     <div className="bg-slate-50">
       <div className="sm-ml-mr-80 ">
-        <div className="bg-white gap">
+        <div className="bg-white ">
 
-          <div className=" w-fill flex justify-center">
-            <Navbar options={myArray} />
+          <div className=" w-fill flex justify-center h-20">
+            <div className="pt-6"><Navbar options={myArray} /> </div>
           </div>
 
           {/*End of Navbar First part*/}
@@ -142,13 +143,13 @@ export default function Home() {
               ))}
             </div>
             {/*End of Article cards*/}
-            <div className="rightSidebar">
+            <div className="gap-y-5 grid sm:justify-items-end">
               <SignupWidget
                 title={"Stay up to date"}
                 content={"Get notified when I publish something new, and unsubscribe at any time."}
               />
               {/*End of SignupWidget*/}
-              <WorkWidget title={"Work"} content={"My work experience."} experiences={myExperience} />
+              <WorkWidget title={"Work"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."} experiences={myExperience} />
               {/*End of WorkWidget*/}
               <SkillsWidget
                 title={"Skills"}
@@ -160,9 +161,10 @@ export default function Home() {
             {/*End of right side*/}
           </div>
           {/*End of big div following Figma*/}
-          <div className="left-inside-144">
+          <div className="left-inside-144 h-44 pb-8">
             <Footer links={links} />{" "}
           </div>
+
         </div>
       </div>
     </div>

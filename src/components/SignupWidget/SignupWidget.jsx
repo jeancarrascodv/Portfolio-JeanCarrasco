@@ -26,7 +26,7 @@ const SignupWidget = ({ title, content, simulateNetworkRequestTime }) => {
   //onSubmit={(event)=>handleSubmit(event)}
 
   return (
-    <form data-testid="signupWidget" className="signup-widget" onSubmit={handleSubmit} autoComplete={'on'}>
+    <form data-testid="signupWidget" className="signup-widget sm:max-w-sm " onSubmit={handleSubmit} autoComplete={'on'}>
       <h2 data-testid="signupWidgetTitle">{title}</h2>
 
       {isSubscribed && (

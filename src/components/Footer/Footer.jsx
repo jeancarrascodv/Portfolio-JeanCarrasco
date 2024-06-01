@@ -9,7 +9,7 @@ const Footer = ({ links }) => {
   const year = new Date().getFullYear();
 
   return (
-    <footer data-testid="footer" className="footer">
+    <footer data-testid="footer" className="footer  bg-white text-justify">
       <ul>
         {links.map((item, index) => (
           <li data-testid={'footerLink' + index} key={'item' + index}>

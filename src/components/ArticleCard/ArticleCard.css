@@ -5,12 +5,8 @@
 .article-card {
   display: flex;
   flex-direction: column;
-  padding: 24px 32px;
-  border: 1px solid #e0e0e0;
+  padding: 24px 20px;
   border-radius: 6px;
-  width: 100%;
-  max-width: 360px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .article-card .article-card-header time {

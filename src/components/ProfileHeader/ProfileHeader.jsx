@@ -6,7 +6,7 @@ import ifNotSimp from "./ProfileIcon/homer-simpson.jpg";
 const ProfileHeader = ({ imageUrl, name, bio, linkedinUrl }) => {
   // const defaultImageUrl = "/src/components/ProfileHeader/ProfileIcon/kirby.png";
   return (
-    <div className=" sm:max-w-md ">
+    <div className=" profile-header sm:max-w-2xl">
       <div className="w-full flex justify-start">
         <Image
           className="rounded-full mb-5 object-cover border-3 border-white"
