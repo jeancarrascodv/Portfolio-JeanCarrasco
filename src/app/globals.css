@@ -2,81 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.profile-header-container {
-  flex-basis: calc(70% - 10px); /* Adjust the width of the profile header container */
-  margin-right: auto; /* Add margin between the ProfileHeader and the articles */
-  margin-left: auto;
+.sm-ml-mr-80 {
+  @apply sm:ml-20 sm:mr-20;
 }
-
-.mainCard {
-  display: flex;
-  margin-left: auto;
+.inside-144 {
+  @apply sm:ml-144 sm:mr-144;
 }
-
-@media screen and (max-width: 767px) {
-  .mainCard {
-    display: inline;
-    margin: auto;
-  }
-}
-
-.rightSidebar {
-  padding: 12px;
-  margin-right: auto;
-}
-.footerContainer {
-  position: relative; /* Ensure relative positioning */
-  /* Add additional styling as needed */
-}
-
-.footerBar {
-  position: relative;
-  /* change to relative */
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: none;
-  border-top: 1px solid gray;
-  padding: 20px;
-  display: flex;
-  justify-content: left;
-}
-/* Adjusting margin for skills widget */
-.rightSidebar .skills-widget {
-  margin-top: 20px;
-}
-
-/* Adjusting margin for work article */
-.rightSidebar .article-work {
-  margin-bottom: 20px;
-}
-
-.dark-mode .profile-header .home-head-title {
-  color: #fff;
-}
-
-.dark-mode .home-description {
-  color: #fff;
-}
-
-.dark-mode .card-content {
-  color: #fff;
-}
-
-.dark-mode .signup-head {
-  color: #fff;
-}
-.dark-mode .card-content {
-  color: #fff;
-}
-
-.dark-mode .signup-contentP {
-  color: #fff;
-}
-.dark-mode .work-h2 {
-  color: #fff;
-}
-
-.dark-mode .work-p {
-  color: #fff;
+.left-inside-144 {
+  @apply sm:ml-144;
 }

@@ -4,9 +4,9 @@ import ArticleCard from "@/components/ArticleCard/ArticleCard";
 import SignupWidget from "@/components/SignupWidget/SignupWidget";
 import WorkWidget from "@/components/WorkWidget/WorkWidget.jsx";
 import SkillsWidget from "@/components/SkillsWidget/SkillsWidget.jsx";
-import Footer from '@/components/Footer/Footer.jsx';
+import Footer from "@/components/Footer/Footer.jsx";
 //-----------------Images------------------------------------
-import myPhoto from "../components/ProfileHeader/ProfileIcon/mySelf.jpeg";
+import myPhoto from "@/components/ProfileHeader/ProfileIcon/mySelf.png";
 import slack from "../components/WorkWidget/WorkLogo/slack.png";
 import spotify from "../components/WorkWidget/WorkLogo/spotify.png";
 import microsoft from "../components/WorkWidget/WorkLogo/microsoft.png";
@@ -92,69 +92,79 @@ export default function Home() {
   //----------------------------------------------------------------------------------------------------
   const links = [
     {
-      title: 'Home',
-      url: '/',
+      title: "Home",
+      url: "/",
     },
     {
-      title: 'About',
-      url: '/about',
+      title: "About",
+      url: "/about",
     },
     {
-      title: 'Projects',
-      url: '/projects',
+      title: "Projects",
+      url: "/projects",
     },
     {
-      title: 'Uses',
-      url: '/uses',
+      title: "Uses",
+      url: "/uses",
     },
   ];
   //----------------------------------------------------------------------------------------------------
 
   return (
-    <div>
-      <Navbar options={myArray} />
-      {/*End of Navbar*/}
-      <div className="profile-header-container">
-        <ProfileHeader
-          name="Software engineer, father, and believer"
-          bio="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.."
-          linkedinUrl="https://www.linkedin.com/in/daniel-figueroa-perez-465a39304/"
-          imageUrl={myPhoto}
-        />
-      </div>
-      {/*End of header*/}
-      <div className="footerContainer">
-        <div className={"articles"}>
-          {articles.map((article, index) => (
-            <ArticleCard
-              key={index}
-              date={article.date}
-              title={article.title}
-              content={article.content}
-              link={article.link}
+    <div className="bg-slate-50">
+      <div className="sm-ml-mr-80 ">
+        <div className="bg-white gap">
+
+          <div className=" w-fill flex justify-center">
+            <Navbar options={myArray} />
+          </div>
+
+          {/*End of Navbar First part*/}
+          <div className="left-inside-144">
+            <ProfileHeader
+              name="Software engineer, father, and believer"
+              bio="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.."
+              linkedinUrl="https://www.linkedin.com/in/daniel-figueroa-perez-465a39304/"
+              imageUrl={myPhoto}
             />
-          ))}
+          </div>
+          {/*End of header just another div ( down here starts the layout)*/}
+          <div className="grid sm:grid-cols-2 inside-144">
+            <div className={"articles"}>
+              {articles.map((article, index) => (
+                <ArticleCard
+                  key={index}
+                  date={article.date}
+                  title={article.title}
+                  content={article.content}
+                  link={article.link}
+                />
+              ))}
+            </div>
+            {/*End of Article cards*/}
+            <div className="rightSidebar">
+              <SignupWidget
+                title={"Stay up to date"}
+                content={"Get notified when I publish something new, and unsubscribe at any time."}
+              />
+              {/*End of SignupWidget*/}
+              <WorkWidget title={"Work"} content={"My work experience."} experiences={myExperience} />
+              {/*End of WorkWidget*/}
+              <SkillsWidget
+                title={"Skills"}
+                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."}
+                skills={skills}
+              />
+              {/*End of SkillsWidget*/}
+            </div>
+            {/*End of right side*/}
+          </div>
+          {/*End of big div following Figma*/}
+          <div className="left-inside-144">
+            <Footer links={links} />{" "}
+          </div>
         </div>
-        {/*End of Article cards*/}
-        <div className="rightSidebar">
-          <SignupWidget
-            title={"Stay up to date"}
-            content={"Get notified when I publish something new, and unsubscribe at any time."}
-          />
-          {/*End of SignupWidget*/}
-          <WorkWidget title={"Work"} content={"My work experience."} experiences={myExperience} />
-          {/*End of WorkWidget*/}
-          <SkillsWidget
-            title={"Skills"}
-            content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."}
-            skills={skills}
-          />
-          {/*End of SkillsWidget*/}
-        </div>
-        {/*End of right side*/}
       </div>
-      <Footer links={links} />
-      {/*End of big div following Figma*/}
     </div>
   );
   {
