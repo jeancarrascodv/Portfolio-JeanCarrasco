@@ -93,7 +93,7 @@ export default function Home() {
   const links = [
     {
       title: 'Home',
-      url: '/home',
+      url: '/',
     },
     {
       title: 'About',
