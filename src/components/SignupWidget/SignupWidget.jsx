@@ -44,6 +44,7 @@ const SignupWidget = ({ title, content, simulateNetworkRequestTime }) => {
               required
               onInput={(val) => setEmail(val.target.value)}
               disabled={busy}
+              placeholder='Email address'
             />
 
             {/* TO-DO: add your code here for the email input field, with data-testid={'signupWidgetInput}

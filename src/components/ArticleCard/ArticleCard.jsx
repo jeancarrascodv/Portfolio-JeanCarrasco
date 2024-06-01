@@ -1,5 +1,5 @@
 import "./ArticleCard.css";
-import vector from "./vector.png";
+import vector from "./Vector.svg";
 import Image from "next/image";
 import PropTypes from "prop-types";
 
@@ -23,12 +23,12 @@ const ArticleCard = ({ date, title, content, link }) => {
 
       <p data-testid={"articleCardContent"}>{content}</p>
       <a data-testid={"articleCardLink"} href={link}>
-        Read article <Image  src={vector} alt="arrow Icon" width={16} height={16} />
+        Read article <Image className="fill-blue-500" src={vector} alt="arrow Icon" width={6.5} height={20} />
       </a>
     </article>
   );
 };
-
+{/*<Image className="fill-blue-500" src={vector} alt="arrow Icon" width={16} height={16} />*/}
 ArticleCard.propTypes = {
   date: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

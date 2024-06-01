@@ -8,7 +8,7 @@ import PropTypes from 'prop-types';
 
 const WorkWidget = ({ title, content, experiences }) => {
   return (
-    <section className="work-widget" data-testid="workWidget">
+    <section className="work-widget sm:max-w-sm" data-testid="workWidget">
       <h2 data-testid="workWidgetTitle">{title}</h2>
       <p data-testid="workWidgetContent">{content}</p>
       <ul>
