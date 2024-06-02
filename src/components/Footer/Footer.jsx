@@ -9,7 +9,8 @@ const Footer = ({ links }) => {
   const year = new Date().getFullYear();
 
   return (
-    <footer data-testid="footer" className="footer  bg-white text-justify">
+    <footer data-testid="footer" className="footer  bg-white text-justify
+    sm:flex flex-col justify-between">
       <ul>
         {links.map((item, index) => (
           <li data-testid={'footerLink' + index} key={'item' + index}>
@@ -18,7 +19,7 @@ const Footer = ({ links }) => {
         ))}
       </ul>
 
-      <p data-testid="footerContent">{`© ${year}`}</p>
+      <p data-testid="footerContent" className='pt-6 sm:pt-0'>{`© ${year} John Doe. All rights reserved`}</p>
     </footer>
   );
 };

@@ -14,6 +14,10 @@ import audible from "../components/WorkWidget/WorkLogo/audible.png";
 import css3 from "../components/SkillsWidget/SkillsLogo/css3.png";
 import html5 from "../components/SkillsWidget/SkillsLogo/html5.png";
 import javaS from "../components/SkillsWidget/SkillsLogo/javascript.png";
+import X from "@/components/LinksAbout/LinksImages/X.png";
+import GitHub from "@/components/LinksAbout/LinksImages/GitHub.png";
+import LinkedIn from "@/components/LinksAbout/LinksImages/LinkedIn.png";
+import Mail from "@/components/LinksAbout/LinksImages/Mail.png";
 
 export const metadata = {
   title: "Portfolio - Home",
@@ -110,6 +114,21 @@ export default function Home() {
     },
   ];
   //----------------------------------------------------------------------------------------------------
+  const FollowLinks = [
+    {
+      image: LinkedIn,
+      link: 'https://www.linkedin.com/learning/?u=54864305',
+    },
+    {
+      image: X,
+      link: 'https://x.com/',
+    },
+    {
+      image: GitHub,
+      link: 'https://github.com/dani99Ensi',
+    },
+
+  ];
 //space-y-6
   return (
     <div className="bg-slate-50">
@@ -127,11 +146,12 @@ export default function Home() {
               bio="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.."
               linkedinUrl="https://www.linkedin.com/in/daniel-figueroa-perez-465a39304/"
               imageUrl={myPhoto}
+              items={FollowLinks}
             />
           </div>
           {/*End of header just another div ( down here starts the layout)*/}
-          <div className="grid sm:grid-cols-2 inside-144">
-            <div className={"articles"}>
+          <div className="grid sm:grid-cols-2 inside-144 pb-14">
+            <div className={"sm:w-[594px]"}>
               {articles.map((article, index) => (
                 <ArticleCard
                   key={index}
@@ -143,7 +163,7 @@ export default function Home() {
               ))}
             </div>
             {/*End of Article cards*/}
-            <div className="gap-y-5 grid sm:justify-items-end">
+            <div className="gap-y-5 grid sm:justify-items-end  ">
               <SignupWidget
                 title={"Stay up to date"}
                 content={"Get notified when I publish something new, and unsubscribe at any time."}
@@ -161,7 +181,7 @@ export default function Home() {
             {/*End of right side*/}
           </div>
           {/*End of big div following Figma*/}
-          <div className="left-inside-144 h-44 pb-8">
+          <div className="inside-144 h-44 pb-8">
             <Footer links={links} />{" "}
           </div>
 

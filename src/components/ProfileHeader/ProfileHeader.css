@@ -5,6 +5,20 @@
   box-sizing: border-box;
 }
 
+{/*justify-content: space-between;*/}
+.auxiliar{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-between;
+}
+
+.auxiliar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 24px;
+}
 
 h1 {
   font-size: 2.5rem;

@@ -7,15 +7,15 @@ const LinkAbout = ({ items, Email }) => {
   return (
     <div>
       <div>
-      {items.map((item, index) => (
-        <div key={index}>
-          <a href={item.link} target="_blank" rel="noopener noreferrer">
-            <Image src={item.image} alt="Image Not Found" width={24} height={24} />
-            <p>{item.content}</p>
-          </a>
-        </div>
-      ))}
-</div>
+        {items.map((item, index) => (
+          <div key={index}>
+            <a href={item.link} target="_blank" rel="noopener noreferrer">
+              <Image src={item.image} alt="Image Not Found" width={24} height={24} />
+              <p>{item.content}</p>
+            </a>
+          </div>
+        ))}
+      </div>
 
       {Email.map((item, index) => (
         <div key={index}>

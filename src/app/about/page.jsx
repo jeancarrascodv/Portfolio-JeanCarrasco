@@ -67,32 +67,28 @@ export default function About() {
       url: "/uses",
     },
   ];
-//-------------------------------------------------------------------------------------------------------
-const FollowLinks = [
-  {
-    image: X,
-    content: 'Follow me on X',
-    link: 'https://github.com/dani99Ensi',
-  },
-  {
-    image: GitHub,
-    content: 'Follow me on GitHub',
-    link: 'https://github.com/dani99Ensi',
-  },
-  {
-    image: LinkedIn,
-    content: 'Follow me on LinkedIn',
-    link: 'https://www.linkedin.com/learning/?u=54864305',
-  },
-];
-//-------------------------------------------------------------------------------------------------------
-const EmailLinks = [
-  {
-    image: Mail,
-    content: 'daniel@hotmail.com',
-    link: 'https://outlook.live.com/mail/about/index_en.html',
-  }
-];
+  //-------------------------------------------------------------------------------------------------------
+  const FollowLinks = [
+    { image: X, content: "Follow me on X", link: "https://x.com/" },
+    {
+      image: GitHub,
+      content: "Follow me on GitHub",
+      link: "https://github.com/dani99Ensi",
+    },
+    {
+      image: LinkedIn,
+      content: "Follow me on LinkedIn",
+      link: "https://www.linkedin.com/learning/?u=54864305",
+    },
+  ];
+  //-------------------------------------------------------------------------------------------------------
+  const EmailLinks = [
+    {
+      image: Mail,
+      content: "daniel@hotmail.com",
+      link: "https://outlook.live.com/mail/about/index_en.html",
+    },
+  ];
 
   return (
     <div>
@@ -101,7 +97,7 @@ const EmailLinks = [
       <Image src={womenPhoto} alt="Women Icon" width={464} height={452} />
       <AboutHeader items={itemsArray} />
       {/*End of header*/}
-     <LinksAbout items={FollowLinks} Email={EmailLinks}/>
+      <LinksAbout items={FollowLinks} Email={EmailLinks} />
       <Footer links={links} />
     </div>
   );

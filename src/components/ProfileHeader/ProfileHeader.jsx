@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Image from "next/image";
 import ifNotSimp from "./ProfileIcon/homer-simpson.jpg";
 
-const ProfileHeader = ({ imageUrl, name, bio, linkedinUrl }) => {
+const ProfileHeader = ({ imageUrl, name, bio, linkedinUrl,items }) => {
   // const defaultImageUrl = "/src/components/ProfileHeader/ProfileIcon/kirby.png";
   return (
     <div className=" profile-header sm:max-w-2xl">
@@ -25,6 +25,19 @@ const ProfileHeader = ({ imageUrl, name, bio, linkedinUrl }) => {
           {/*review this cuz not sure*/}
         </a>
       </div>
+{/*----------------------------------------------*/}
+      <div className="auxiliar bg-white text-justify">
+      <ul>
+        {items.map((item, index) => (
+          <li data-testid={'footerLink' + index} key={'item' + index}>
+           <a href={item.link} target="_blank" rel="noopener noreferrer">
+            <Image src={item.image} alt="Image Not Found" width={24} height={24} />
+          </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+
     </div>
   );
 };
@@ -34,6 +47,11 @@ ProfileHeader.propTypes = {
   name: PropTypes.string.isRequired,
   bio: PropTypes.string.isRequired,
   linkedinUrl: PropTypes.string.isRequired,
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      image: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
+    }))
 };
 
 export default ProfileHeader;
