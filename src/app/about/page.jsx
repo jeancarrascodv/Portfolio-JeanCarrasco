@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar/Navbar";
 import AboutHeader from "@/components/AboutHeader/AboutHeader.jsx";
 import LinksAbout from "@/components/LinksAbout/LinksAbout.jsx";
 import Footer from "@/components/Footer/Footer.jsx";
+import ThemeSwitcher from "@/components/ThemeSwitcher/ThemeSwitcher.jsx";
+import DropDown from "@/components/DropDown/DropDown.jsx";
 
 //----------------images-------------------
 //import myPhoto from "../components/ProfileHeader/ProfileIcon/mySelf.jpeg";
@@ -92,13 +94,40 @@ export default function About() {
 
   return (
     <div>
-      <Navbar options={myArray} />
-      {/*End of header*/}
-      <Image src={womenPhoto} alt="Women Icon" width={464} height={452} />
-      <AboutHeader items={itemsArray} />
-      {/*End of header*/}
-      <LinksAbout items={FollowLinks} Email={EmailLinks} />
-      <Footer links={links} />
+      <div className="bg-slate-50 dark:bg-black">
+        <div className="sm-ml-mr-80 ">
+          <div className="bg-white dark:bg-zinc-900">
+            <div className="flex w-full items-center justify-between">
+              <div> </div>
+              <div>
+                <Navbar options={myArray} />
+              </div>
+              <div className="sm:pr-32 flex items-center">
+                <DropDown />
+                <ThemeSwitcher darkClassName="dark" />
+              </div>
+            </div>
+            {/*End of header---------------------------------------------------*/}
+            <div className="inside-144">
+              <div className="grid sm:grid-cols-2 gap-x-20 pb-14">
+                <div className="order-2 sm:order-first ">
+                  <AboutHeader items={itemsArray} />
+                </div>
+
+                <div className="order-1 sm:order-2">
+                  <Image src={womenPhoto} alt="Women Icon" width={464} height={452} />
+                </div>
+                <div className="sm:order-3"></div>
+                <div className="order-last sm:order-4">
+                  <LinksAbout items={FollowLinks} Email={EmailLinks} />
+                </div>
+              </div>
+
+              <Footer links={links} />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
