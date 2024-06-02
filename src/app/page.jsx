@@ -5,6 +5,8 @@ import SignupWidget from "@/components/SignupWidget/SignupWidget";
 import WorkWidget from "@/components/WorkWidget/WorkWidget.jsx";
 import SkillsWidget from "@/components/SkillsWidget/SkillsWidget.jsx";
 import Footer from "@/components/Footer/Footer.jsx";
+import ThemeSwitcher from "@/components/ThemeSwitcher/ThemeSwitcher.jsx";
+//ThemeSwitcher
 //-----------------Images------------------------------------
 import myPhoto from "@/components/ProfileHeader/ProfileIcon/mySelf.png";
 import slack from "../components/WorkWidget/WorkLogo/slack.png";
@@ -117,26 +119,31 @@ export default function Home() {
   const FollowLinks = [
     {
       image: LinkedIn,
-      link: 'https://www.linkedin.com/learning/?u=54864305',
+      link: "https://www.linkedin.com/learning/?u=54864305",
     },
     {
       image: X,
-      link: 'https://x.com/',
+      link: "https://x.com/",
     },
     {
       image: GitHub,
-      link: 'https://github.com/dani99Ensi',
+      link: "https://github.com/dani99Ensi",
     },
-
   ];
-//space-y-6
+  //space-y-6
   return (
-    <div className="bg-slate-50">
+    <div className="bg-slate-50 dark:bg-black">
       <div className="sm-ml-mr-80 ">
-        <div className="bg-white ">
-
-          <div className=" w-fill flex justify-center h-20">
-            <div className="pt-6"><Navbar options={myArray} /> </div>
+        <div className="bg-white dark:bg-neutral-800">
+          {/*w-fill flex justify-center */}
+          <div className=" h-20 pt-6 sm:grid grid-cols-3 inside-144 ">
+            <div> </div>
+            <div>
+              <Navbar options={myArray} />
+            </div>
+            <div>
+              <ThemeSwitcher darkClassName="dark"/>
+            </div>
           </div>
 
           {/*End of Navbar First part*/}
@@ -169,7 +176,11 @@ export default function Home() {
                 content={"Get notified when I publish something new, and unsubscribe at any time."}
               />
               {/*End of SignupWidget*/}
-              <WorkWidget title={"Work"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."} experiences={myExperience} />
+              <WorkWidget
+                title={"Work"}
+                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."}
+                experiences={myExperience}
+              />
               {/*End of WorkWidget*/}
               <SkillsWidget
                 title={"Skills"}
@@ -184,7 +195,6 @@ export default function Home() {
           <div className="inside-144 h-44 pb-8">
             <Footer links={links} />{" "}
           </div>
-
         </div>
       </div>
     </div>
