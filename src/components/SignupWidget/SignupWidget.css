@@ -17,6 +17,9 @@
   font-weight: bold;
   color: #333;
   margin: 0px;
+   display:flex;
+  align-items: center;
+  column-gap: 10px;
 }
 
 .signup-widget p {

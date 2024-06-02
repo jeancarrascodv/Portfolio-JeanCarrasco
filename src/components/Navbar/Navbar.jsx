@@ -10,14 +10,15 @@ function Navbar({
   ],
 }) {
 
-  //const router = useRouter();
+  //const router = useRouter();  <DropDown className="sm:hidden" />
   return (
-    <nav data-testid="nav" className="navbar h-10 w-72 items-center justify-center shadow-lg shadow-indigo-500/40">
+    <nav data-testid="nav" className="hidden sm:flex navbar h-10 w-72 items-center justify-center shadow-lg
+     shadow-indigo-500/40 dark:bg-neutral-800  ">
       <ul data-testid="ul">
         {options.map((item, index) => (
           <li key={index} data-testid={'li' + index}>
             <a data-testid={'a' + index}
-            className="link" href={item.path}>
+            className="link dark:text-white" href={item.path}>
               {item.label}
             </a>
           </li>

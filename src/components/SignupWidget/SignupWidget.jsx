@@ -2,6 +2,8 @@
 import './SignupWidget.css';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import Image from "next/image";
+import Mail from "@/components/LinksAbout/LinksImages/MailV.svg";
 
 const SignupWidget = ({ title, content, simulateNetworkRequestTime }) => {
   // State to manage the email input and messages
@@ -26,17 +28,18 @@ const SignupWidget = ({ title, content, simulateNetworkRequestTime }) => {
   //onSubmit={(event)=>handleSubmit(event)}
 
   return (
-    <form data-testid="signupWidget" className="signup-widget sm:max-w-sm " onSubmit={handleSubmit} autoComplete={'on'}>
-      <h2 data-testid="signupWidgetTitle">{title}</h2>
+    <form data-testid="signupWidget" className="signup-widget sm:max-w-sm dark:border-2 border-zinc-700" onSubmit={handleSubmit} autoComplete={'on'}>
+      <h2 data-testid="signupWidgetTitle" className='dark:text-white'>
+      <Image className="fill-blue-500 " src={Mail} alt="arrow Icon" width={30} height={30} /> {title}</h2>
 
       {isSubscribed && (
-        <p data-testid="signupWidgetMessage" className="message">
+        <p data-testid="signupWidgetMessage" className="dark:text-white message">
           {message}
         </p>
       )}
       {!isSubscribed && (
         <>
-          <p data-testid="signupWidgetContent">{content}</p>
+          <p data-testid="signupWidgetContent" className='dark:text-text-zinc-400'>{content}</p>
           <div className={'input-row'}>
             <input
               type="email"
@@ -45,6 +48,7 @@ const SignupWidget = ({ title, content, simulateNetworkRequestTime }) => {
               onInput={(val) => setEmail(val.target.value)}
               disabled={busy}
               placeholder='Email address'
+              className='bg-transparent'
             />
 
             {/* TO-DO: add your code here for the email input field, with data-testid={'signupWidgetInput}
@@ -55,7 +59,7 @@ const SignupWidget = ({ title, content, simulateNetworkRequestTime }) => {
             - if the email is not valid, a message will be displayed, and submission will be prevented
             */}
 
-            <button data-testid="signupWidgetButton" type="submit" disabled={busy}>
+            <button data-testid="signupWidgetButton" className='dark:bg-zinc-700' type="submit" disabled={busy}>
               {busy ? 'Joining...' : 'Join'}
             </button>
 

@@ -7,10 +7,10 @@ import Footer from "@/components/Footer/Footer.jsx";
 //----------------images-------------------
 //import myPhoto from "../components/ProfileHeader/ProfileIcon/mySelf.jpeg";
 import womenPhoto from "/public/img.jpg";
-import X from "@/components/LinksAbout/LinksImages/X.png";
-import GitHub from "@/components/LinksAbout/LinksImages/GitHub.png";
-import LinkedIn from "@/components/LinksAbout/LinksImages/LinkedIn.png";
-import Mail from "@/components/LinksAbout/LinksImages/Mail.png";
+import X from "@/components/LinksAbout/LinksImages/XV.svg";
+import GitHub from "@/components/LinksAbout/LinksImages/GitHub.svg";
+import LinkedIn from "@/components/LinksAbout/LinksImages/LinkedinV.svg";
+import Mail from "@/components/LinksAbout/LinksImages/MailV.svg";
 
 //"../components/WorkWidget/WorkLogo/microsoft.png";
 export const metadata = {

@@ -1,9 +1,8 @@
 /* TODO:
   Fill out this component according to the README.
 */
-
+{/*display flex in conflict with tailwindcss do not forget*/}
 .navbar {
-  display: inline-block;
   background-color: #FFFFFF;
   border-radius: 30px;
   border-color: #d4d4d8;

@@ -17,8 +17,8 @@ const ProfileHeader = ({ imageUrl, name, bio, linkedinUrl,items }) => {
         />
       </div>
 
-      <h1 className="text-4xl text-gray-900  text-justify font-roboto break-words ">{name}</h1>
-      <p className=" text-base  text-gray-600 text-justify">{bio}</p>
+      <h1 className="text-4xl text-gray-900  text-justify font-roboto break-words dark:text-white">{name}</h1>
+      <p className=" text-base  text-gray-600 text-justify dark:text-zinc-400">{bio}</p>
       <div className="flex justify-center mt-5">
         <a href={linkedinUrl} target="_blank" rel="noopener noreferrer">
           <i ></i>
@@ -26,7 +26,7 @@ const ProfileHeader = ({ imageUrl, name, bio, linkedinUrl,items }) => {
         </a>
       </div>
 {/*----------------------------------------------*/}
-      <div className="auxiliar bg-white text-justify">
+      <div className="auxiliar bg-transparent">
       <ul>
         {items.map((item, index) => (
           <li data-testid={'footerLink' + index} key={'item' + index}>
