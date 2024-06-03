@@ -108,21 +108,23 @@ export default function About() {
               </div>
             </div>
             {/*End of header---------------------------------------------------*/}
-            <div className="inside-144">
-              <div className="grid sm:grid-cols-2 gap-x-20 pb-14">
+            <div className="inside-144 pt-10">
+              <div className="grid sm:grid-cols-2 gap-x-20 gap-y-14 pb-14">
                 <div className="order-2 sm:order-first ">
                   <AboutHeader items={itemsArray} />
                 </div>
 
-                <div className="order-1 sm:order-2">
-                  <Image src={womenPhoto} alt="Women Icon" width={464} height={452} />
-                </div>
-                <div className="sm:order-3"></div>
-                <div className="order-last sm:order-4">
-                  <LinksAbout items={FollowLinks} Email={EmailLinks} />
+                <div className="order-1 sm:order-2 ">
+                    <Image src={womenPhoto} alt="Women Icon"  style={{  borderTopLeftRadius: '3rem', borderTopRightRadius: '3rem' }}
+                     className="w-full px-5 " />
+                  <div className="hidden sm:flex pt-10 ">
+                    <LinksAbout items={FollowLinks} Email={EmailLinks} />
+                  </div>
                 </div>
               </div>
-
+              <div className="sm:hidden">
+                <LinksAbout items={FollowLinks} Email={EmailLinks} />
+              </div>
               <Footer links={links} />
             </div>
           </div>
