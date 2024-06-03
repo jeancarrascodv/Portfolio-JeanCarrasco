@@ -24,7 +24,8 @@ export default function About() {
   let myArray = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About" },
-    { path: "/contact", label: "Contact" },
+    { path: "/projects", label: "Projects" },
+    { path: "/uses", label: "Uses" },
   ];
   //-----------------------------------------------------------------------
   const itemsArray = [

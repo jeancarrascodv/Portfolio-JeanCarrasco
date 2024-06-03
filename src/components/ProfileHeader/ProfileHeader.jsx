@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Image from "next/image";
 import ifNotSimp from "./ProfileIcon/homer-simpson.jpg";
 
+
 const ProfileHeader = ({ imageUrl, name, bio, linkedinUrl,items }) => {
   // const defaultImageUrl = "/src/components/ProfileHeader/ProfileIcon/kirby.png";
   return (
