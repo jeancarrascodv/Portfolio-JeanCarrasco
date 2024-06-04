@@ -1,6 +1,8 @@
+"use client";
 import './Navbar.css';
 import PropTypes from 'prop-types';
-//import { useRouter } from 'next/navigation';
+/*import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';*/
 
 function Navbar({
   options = [
@@ -9,7 +11,15 @@ function Navbar({
     { path: '/contact', label: 'Contact' },
   ],
 }) {
+/*
+  const pathname = usePathname(); // Use the usePathname hook
+  const [currentPath, setCurrentPath] = useState('');
 
+  useEffect(() => {
+    if (pathname) { // Check if pathname is ready
+      setCurrentPath(pathname);
+    }
+  }, [pathname]);*/
   //const router = useRouter();  <DropDown className="sm:hidden" />
   return (
     <nav data-testid="nav" className="hidden sm:flex navbar h-10 w-72 items-center justify-center shadow-lg
@@ -18,7 +28,8 @@ function Navbar({
         {options.map((item, index) => (
           <li key={index} data-testid={'li' + index}>
             <a data-testid={'a' + index}
-            className="link dark:text-white" href={item.path}>
+            {/*className={`link ${currentPath===item.path? "active":"" } dark:text-white`} href={item.path}>*/}
+            className="dark:text-white" href={item.path}>
               {item.label}
             </a>
           </li>
