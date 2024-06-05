@@ -1,4 +1,4 @@
-"use client";
+//"use client";
 import './Navbar.css';
 import PropTypes from 'prop-types';
 /*import { usePathname } from 'next/navigation';
@@ -28,9 +28,8 @@ function Navbar({
         {options.map((item, index) => (
           <li key={index} data-testid={'li' + index}>
             <a data-testid={'a' + index}
-            {/*className={`link ${currentPath===item.path? "active":"" } dark:text-white`} href={item.path}>*/}
-            className="dark:text-white" href={item.path}>
-              {item.label}
+            className="dark:text-white" href={item.path} >
+                {item.label}
             </a>
           </li>
         ))}
