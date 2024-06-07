@@ -21,7 +21,6 @@ import X from "@/components/LinksAbout/LinksImages/XV.svg";
 import GitHub from "@/components/LinksAbout/LinksImages/GitHub.svg";
 import LinkedIn from "@/components/LinksAbout/LinksImages/LinkedinV.svg";
 
-
 export const metadata = {
   title: "Portfolio - Home",
   description: "Home page of my portfolio.",
@@ -140,7 +139,7 @@ export default function Home() {
           items-center--> worked vertical alignment*/}
           <div className="flex w-full items-center justify-between">
             <div> </div>
-            <div >
+            <div>
               <Navbar options={myArray} />
             </div>
             <div className="sm:pr-32 flex items-center">
@@ -162,7 +161,7 @@ export default function Home() {
           {/*End of header just another div ( down here starts the layout)*/}
           <div className="grid sm:grid-cols-2 inside-144 pb-14">
             {/*className={"sm:w-[594px]"} i took this off just in case*/}
-            <div >
+            <div>
               {articles.map((article, index) => (
                 <ArticleCard
                   key={index}

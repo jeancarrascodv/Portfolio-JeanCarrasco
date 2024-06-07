@@ -28,7 +28,7 @@ function Navbar({
         {options.map((item, index) => (
           <li key={index} data-testid={'li' + index}>
             <a data-testid={'a' + index}
-            className="dark:text-white" href={item.path} >
+            className="link dark:text-white" href={item.path} >
                 {item.label}
             </a>
           </li>

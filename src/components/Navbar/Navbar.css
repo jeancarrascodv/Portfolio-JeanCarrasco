@@ -27,11 +27,3 @@
   text-decoration-color: #38bdf8;
 }
 
-.link:active {
-  color: #38bdf8;
-  text-decoration: none;
-}
-
-.link.active {
-  color: red;
-}

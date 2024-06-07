@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import "./ThemeSwitcher.css";
 import PropTypes from "prop-types";
 import Image from "next/image";

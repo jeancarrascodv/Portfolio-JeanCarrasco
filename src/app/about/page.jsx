@@ -116,8 +116,12 @@ export default function About() {
                 </div>
 
                 <div className="order-1 sm:order-2 ">
-                    <Image src={womenPhoto} alt="Women Icon"  style={{  borderTopLeftRadius: '3rem', borderTopRightRadius: '3rem' }}
-                     className="w-full px-5 " />
+                  <Image
+                    src={womenPhoto}
+                    alt="Women Icon"
+                    style={{ borderTopLeftRadius: "3rem", borderTopRightRadius: "3rem" }}
+                    className="w-full px-5 "
+                  />
                   <div className="hidden sm:flex pt-10 ">
                     <LinksAbout items={FollowLinks} Email={EmailLinks} />
                   </div>
