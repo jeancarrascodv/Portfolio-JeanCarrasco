@@ -12,7 +12,7 @@ const UsesSection = ({ items }) => {
       {items.map((item, index) => (
         <div className="uses-section__content sm:w-4/5" key={'item' + index}>
           <div className="uses-section__group sm:flex">
-            <h2 className='sm:pb-14 sm:pt-14' >{item.groupName}</h2>
+            <h2 className='sm:pb-14 sm:pt-14 dark:text-white' >{item.groupName}</h2>
             <div className="uses-section__group-content">
               {item.items.map((item2, index2) => (
                 <UseCard  title={item2.title} content={item2.description} key={'Inside' + index2} />

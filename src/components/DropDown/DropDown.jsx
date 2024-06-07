@@ -28,17 +28,25 @@ const Dropdown = ({ onPreview, onEdit, onClone, onDelete }) => {
       {isOpen && (
         <div className="dropdown-container rounded-3xl dark:bg-zinc-800">
           <button data-testid="previewButton" className="dropdown-item dark:text-white" onClick={onPreview}>
-            Home
+          <a className=" dark:text-white" href="/" >
+                Home
+            </a>
           </button>
           <button data-testid="editButton" className="dropdown-item  dark:text-white" onClick={onEdit}>
-            About
+          <a className=" dark:text-white" href="/about" >
+                About
+            </a>
           </button>
           <button data-testid="cloneButton" className="dropdown-item  dark:text-white" onClick={onClone}>
-            Projects
+          <a className=" dark:text-white" href="/projects" >
+                Projects
+            </a>
           </button>
           <div className="dropdown-divider"></div>
           <button data-testid="deleteButton" className="dropdown-item danger  dark:text-white" onClick={onDelete}>
-            Uses
+          <a className=" dark:text-white" href="/uses" >
+                Uses
+            </a>
           </button>
         </div>
       )}
