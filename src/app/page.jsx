@@ -20,9 +20,14 @@ import javaS from "../components/SkillsWidget/SkillsLogo/javascript.png";
 import X from "@/components/LinksAbout/LinksImages/XV.svg";
 import GitHub from "@/components/LinksAbout/LinksImages/GitHub.svg";
 import LinkedIn from "@/components/LinksAbout/LinksImages/LinkedinV.svg";
+import Lin from "../components/WorkWidget/WorkLogo/lin.jpg";
+import janium from "../components/WorkWidget/WorkLogo/janium.jpeg";
+import maderas from "../components/WorkWidget/WorkLogo/maderas.jpeg";
+import hidro from "../components/WorkWidget/WorkLogo/hidro.jpeg";
+import edi from "../components/WorkWidget/WorkLogo/edi.jpeg";
 
 export const metadata = {
-  title: "Portfolio - Home",
+  title: "Portfolio - Jean Carrasco",
   description: "Home page of my portfolio.",
 };
 
@@ -61,33 +66,33 @@ export default function Home() {
   //----------------------------------------------------------------------------------------------------
   const myExperience = [
     {
-      ///workspaces/cs220-portfolio-danielsgroup/src/components/WorkWidget/WorkLogo/slack.png
-      logo: slack,
-      organization: "Slack",
-      jobTitle: "Software Engineer",
-      startYear: 2016,
+      ///workspaces/cs220-portfolio-danielsgroup/src/components/WorkWidget/WorkLogo/lin.jpg
+      logo: janium,
+      organization: "Janium",
+      jobTitle: "IT Assistant",
+      startYear: 2024,
       endYear: null,
     },
     {
-      logo: spotify,
-      organization: "Spotify",
-      jobTitle: "Software Engineer",
-      startYear: 2014,
-      endYear: 2015,
+      logo: maderas,
+      organization: "Maderas America",
+      jobTitle: "COO",
+      startYear: 2023,
+      endYear: 2024,
     },
     {
-      logo: audible,
-      organization: "Audible",
-      jobTitle: "Software Engineer",
-      startYear: 2012,
-      endYear: 2013,
+      logo: hidro,
+      organization: "Hidroalemana SAC",
+      jobTitle: "Operation Manager",
+      startYear: 2021,
+      endYear: 2023,
     },
     {
-      logo: microsoft,
-      organization: "Microsoft",
-      jobTitle: "Software Engineer",
-      startYear: 2010,
-      endYear: 2011,
+      logo: edi,
+      organization: "Inmobiliaria Edifica",
+      jobTitle: "Operation Assistant",
+      startYear: 2019,
+      endYear: 2021,
     },
   ];
   //----------------------------------------------------------------------------------------------------
@@ -119,15 +124,15 @@ export default function Home() {
   const FollowLinks = [
     {
       image: LinkedIn,
-      link: "https://www.linkedin.com/learning/?u=54864305",
+      link: "https://www.linkedin.com/in/jean-carrasco/",
     },
     {
       image: X,
-      link: "https://x.com/",
+      link: "https://x.com/JeanCarras16326",
     },
     {
       image: GitHub,
-      link: "https://github.com/dani99Ensi",
+      link: "https://github.com/jeancarrascodv",
     },
   ];
   //space-y-6
@@ -153,7 +158,7 @@ export default function Home() {
             <ProfileHeader
               name="Software engineer, father, and believer"
               bio="Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi.."
-              linkedinUrl="https://www.linkedin.com/in/daniel-figueroa-perez-465a39304/"
+              linkedinUrl="https://www.linkedin.com/in/jean-carrasco/"
               imageUrl={myPhoto}
               items={FollowLinks}
             />
@@ -181,13 +186,13 @@ export default function Home() {
               {/*End of SignupWidget*/}
               <WorkWidget
                 title={"Work"}
-                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."}
+                content={"Industrial - Software Engineer with more than seven years of experience optimizing industrial processes with technology and applications."}
                 experiences={myExperience}
               />
               {/*End of WorkWidget*/}
               <SkillsWidget
                 title={"Skills"}
-                content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi."}
+                content={"My experience in the latest and certified knowledge in different areas."}
                 skills={skills}
               />
               {/*End of SkillsWidget*/}
