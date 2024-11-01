@@ -7,17 +7,15 @@ import ThemeSwitcher from "@/components/ThemeSwitcher/ThemeSwitcher.jsx";
 import DropDown from "@/components/DropDown/DropDown.jsx";
 
 //----------------images-------------------
-//import myPhoto from "../components/ProfileHeader/ProfileIcon/mySelf.jpeg";
-import womenPhoto from "/public/img.jpg";
+import myPhoto from "@/components/ProfileHeader/ProfileIcon/mySelf2.png";
 import X from "@/components/LinksAbout/LinksImages/XV.svg";
 import GitHub from "@/components/LinksAbout/LinksImages/GitHub.svg";
 import LinkedIn from "@/components/LinksAbout/LinksImages/LinkedinV.svg";
 import Mail from "@/components/LinksAbout/LinksImages/MailV.svg";
 
-//"../components/WorkWidget/WorkLogo/microsoft.png";
 export const metadata = {
   title: "Portfolio - About",
-  description: "The about page of my portfolio.",
+  description: "The about page of Jean Carrasco's portfolio.",
 };
 
 export default function About() {
@@ -27,71 +25,45 @@ export default function About() {
     { path: "/projects", label: "Projects" },
     { path: "/uses", label: "Uses" },
   ];
-  //-----------------------------------------------------------------------
+
   const itemsArray = [
     {
-      title: "I’m Jane. I live in New York City, where I develop the future.",
+      title: "I’m Jean Carrasco. A Software Engineer and Project Leader.",
       content: [
         {
           inside:
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
+            "With a strong foundation in DevOps and extensive experience in operational and administrative leadership, I’m dedicated to optimizing processes and driving innovation. As a Software Engineer, I bring technical proficiency and strategic vision to every project.",
         },
         {
           inside:
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
+            "My background as Chief Operations Officer and Project Engineer includes managing complex workflows, overseeing logistics, and ensuring efficiency in all stages of project execution. I also hold an MBA, which has sharpened my ability to make data-driven decisions and enhance business strategies.",
         },
         {
           inside:
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
+            "Additionally, as an International Business Consultant, I leverage my global perspective to navigate diverse business environments, building solutions that align with unique client needs and regulatory standards.",
         },
         {
           inside:
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
+            "I’m passionate about implementing the latest technologies and fostering growth. My work has consistently led to improved productivity, streamlined processes, and long-lasting client relationships.",
         },
       ],
     },
   ];
-  //-----------------------------------------------------------------------------------
+
   const links = [
-    {
-      title: "Home",
-      url: "/",
-    },
-    {
-      title: "About",
-      url: "/about",
-    },
-    {
-      title: "Projects",
-      url: "/projects",
-    },
-    {
-      title: "Uses",
-      url: "/uses",
-    },
+    { title: "Home", url: "/" },
+    { title: "About", url: "/about" },
+    { title: "Projects", url: "/projects" },
+    { title: "Uses", url: "/uses" },
   ];
-  //-------------------------------------------------------------------------------------------------------
+
   const FollowLinks = [
-    { image: X, content: "Follow me on X", link: "https://x.com/" },
-    {
-      image: GitHub,
-      content: "Follow me on GitHub",
-      link: "https://github.com/dani99Ensi",
-    },
-    {
-      image: LinkedIn,
-      content: "Follow me on LinkedIn",
-      link: "https://www.linkedin.com/learning/?u=54864305",
-    },
+    { image: X, content: "Follow me on X", link: "https://x.com/JeanCarras16326" },
+    { image: GitHub, content: "Follow me on GitHub", link: "https://github.com/jeancarrascodv" },
+    { image: LinkedIn, content: "Follow me on LinkedIn", link: "https://www.linkedin.com/in/jean-carrasco/" },
   ];
-  //-------------------------------------------------------------------------------------------------------
-  const EmailLinks = [
-    {
-      image: Mail,
-      content: "daniel@hotmail.com",
-      link: "https://outlook.live.com/mail/about/index_en.html",
-    },
-  ];
+
+  const EmailLinks = [{ image: Mail, content: "jeancarrascodv@gmail.com", link: "mailto:jeancarrascodv@gmail.com" }];
 
   return (
     <div>
@@ -117,8 +89,8 @@ export default function About() {
 
                 <div className="order-1 sm:order-2 ">
                   <Image
-                    src={womenPhoto}
-                    alt="Women Icon"
+                    src={myPhoto}
+                    alt="Jean Carrasco"
                     style={{ borderTopLeftRadius: "3rem", borderTopRightRadius: "3rem" }}
                     className="w-full px-5 "
                   />
