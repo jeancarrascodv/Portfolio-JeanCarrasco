@@ -14,49 +14,82 @@ export const metadata = {
 };
 
 export default function Projects() {
-  let myArray = [
+  const myArray = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About" },
     { path: "/projects", label: "Projects" },
     { path: "/uses", label: "Uses" },
   ];
-  //-----------------------------------------------------------------------
+
   const itemsArray = [
     {
       title: "Things I’ve made trying to put my dent in the universe.",
       content: [
         {
           inside:
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
+            "As an operations leader and project engineer, I have spearheaded various initiatives that blend technology and strategy, aiming to drive innovation and create impactful solutions.",
         },
       ],
     },
   ];
-  //-----------------------------------------------------------------------
+
   const links = [
+    { title: "Home", url: "/" },
+    { title: "About", url: "/about" },
+    { title: "Projects", url: "/projects" },
+    { title: "Uses", url: "/uses" },
+  ];
+
+  const projects = [
     {
-      title: "Home",
-      url: "/",
+      name: "Digital Transformation at Ensign College",
+      logo: Logo,
+      content:
+        "Led the development of a digital platform to streamline student services and improve administrative efficiency.",
+      link: "https://www.ensign.edu/",
     },
     {
-      title: "About",
-      url: "/about",
+      name: "Community Tech Workshops",
+      logo: Logo,
+      content:
+        "Organized workshops to teach tech skills to the community, helping people improve their digital literacy.",
+      link: "https://www.communitytechworkshops.com/",
     },
     {
-      title: "Projects",
-      url: "/projects",
+      name: "Sustainability Efforts",
+      logo: Logo,
+      content: "Helped introduce eco-friendly practices to cut costs and reduce waste.",
+      link: "https://www.ecooptimization.com/",
     },
     {
-      title: "Uses",
-      url: "/uses",
+      name: "Global Operations Optimization",
+      logo: Logo,
+      content:
+        "Streamlined international operations, improving productivity across teams and enhancing global collaboration.",
+      link: "https://www.globaloperations.com/",
+    },
+    {
+      name: "DevOps Integration Project",
+      logo: Logo,
+      content:
+        "Facilitated the adoption of DevOps practices, improving software delivery speed and quality across teams.",
+      link: "https://www.devopstransformation.com/",
+    },
+    {
+      name: "Innovation Hackathon Organizer",
+      logo: Logo,
+      content:
+        "Organized a hackathon to foster creativity among engineers, resulting in innovative solutions and team bonding.",
+      link: "https://www.innovationhackathon.com/",
     },
   ];
+
   return (
     <div className="bg-slate-50 dark:bg-black">
       <div className="sm-ml-mr-80 ">
         <div className="bg-white dark:bg-zinc-900">
           <div className="flex w-full items-center justify-between">
-            <div> </div>
+            <div></div>
             <div>
               <Navbar options={myArray} />
             </div>
@@ -65,19 +98,13 @@ export default function Projects() {
               <ThemeSwitcher darkClassName="dark" />
             </div>
           </div>
-          {/*-------------------------------------------------------------------">*/}
           <div className="left-inside-144">
             <ProjectsHeader items={itemsArray} />
           </div>
-          <div className=" pb-10 mx-14 sm:grid grid-cols-3 inside-144">
-            {[1, 2, 3, 4, 5, 6].map((item, index) => (
+          <div className="pb-10 mx-14 sm:grid grid-cols-3 inside-144">
+            {projects.map((project, index) => (
               <div key={index}>
-                <ProjectCard
-                  name={"Company"}
-                  logo={Logo}
-                  content={"Creating technology to empower civilians to explore space on their own terms."}
-                  link={"https://www.ensign.edu/"}
-                />
+                <ProjectCard name={project.name} logo={project.logo} content={project.content} link={project.link} />
               </div>
             ))}
           </div>

@@ -11,120 +11,88 @@ export const metadata = {
 };
 
 export default function Uses() {
-  let myArray = [
+  const myArray = [
     { path: "/", label: "Home" },
     { path: "/about", label: "About" },
     { path: "/projects", label: "Projects" },
     { path: "/uses", label: "Uses" },
   ];
-  //------------------------------------------------------------------------------------------------
+
   const itemsArray = [
     {
       title: "Software I use, gadgets I love, and other things I recommend.",
       content: [
         {
           inside:
-            "Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
+            "As a Chief of Operations with a strong background in DevOps and industrial engineering, I leverage a variety of tools and methodologies to enhance operational efficiency and drive strategic growth.",
         },
       ],
     },
   ];
-  //------------------------------------------------------------------------------------------------
 
   const items = [
     {
-      groupName: "Workstation",
+      groupName: "Operational Management",
       items: [
         {
-          title: "Item Name",
+          title: "Project Management Software",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+            "Tools like Asana and Trello help me manage complex projects seamlessly, ensuring that milestones are met and resources are optimized.",
         },
         {
-          title: "Item Name",
+          title: "Business Intelligence Tools",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
-        },
-        {
-          title: "Item Name",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
-        },
-        {
-          title: "Item Name",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
-        },
-        {
-          title: "Item Name",
-          description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.",
+            "Using platforms like Tableau and Power BI allows me to make data-driven decisions, fostering continuous improvement across all operational processes.",
         },
       ],
     },
     {
-      groupName: "Development",
+      groupName: "DevOps Practices",
       items: [
         {
-          title: "Item Name",
+          title: "CI/CD Tools",
           description:
-            "lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
+            "Implementing Jenkins and GitLab CI helps streamline deployment processes, bridging the gap between development and operations for high-quality outcomes.",
         },
         {
-          title: "Item Name",
+          title: "Containerization",
           description:
-            "lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
-        },
-        {
-          title: "Item Name",
-          description:
-            "lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
+            "Utilizing Docker and Kubernetes enhances efficiency and scalability, making it easier to manage applications across various environments.",
         },
       ],
     },
     {
-      groupName: "Design",
+      groupName: "Collaboration & Communication",
       items: [
         {
-          title: "Whimsical",
+          title: "Slack",
           description:
-            "lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
+            "A vital tool for team communication, facilitating collaboration across multidisciplinary teams, promoting a culture of innovation.",
         },
         {
-          title: "Figma",
+          title: "Zoom",
           description:
-            "lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
+            "Essential for remote meetings, ensuring clear communication and collaboration with global teams, especially in my role as an IB Consultant.",
         },
       ],
     },
     {
-      groupName: "Productivity",
+      groupName: "Productivity Tools",
       items: [
         {
-          title: "Item Name",
+          title: "Notion",
           description:
-            "lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
+            "Combining notes, tasks, and databases, Notion helps keep my projects organized and ensures that I stay on track with my goals.",
         },
         {
-          title: "Item Name",
+          title: "Google Workspace",
           description:
-            "lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
-        },
-
-        {
-          title: "Item Name",
-          description:
-            "lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
-        },
-        {
-          title: "Item Name",
-          description:
-            "lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi..",
+            "With tools like Docs, Sheets, and Drive, I streamline collaboration and document management, enhancing productivity across teams.",
         },
       ],
     },
   ];
-  //----------------------------------------------------------------------------------------------------
+
   const links = [
     {
       title: "Home",
