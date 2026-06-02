@@ -28,23 +28,23 @@ export default function About() {
 
   const itemsArray = [
     {
-      title: "I’m Jean Carrasco. A Software Engineer and Project Leader.",
+      title: "I’m Jean Carrasco. An AI Automation & Process Optimization Engineer.",
       content: [
         {
           inside:
-            "With a strong foundation in DevOps and extensive experience in operational and administrative leadership, I’m dedicated to optimizing processes and driving innovation. As a Software Engineer, I bring technical proficiency and strategic vision to every project.",
+            "I'm both an industrial and a software engineer. I design AI agents, lead-generation pipelines, and scalable systems that help companies grow without growing their headcount. Having led operations from the inside as a Chief Operations Officer, I know exactly where the bottlenecks and hidden costs live.",
         },
         {
           inside:
-            "My background as Chief Operations Officer and Project Engineer includes managing complex workflows, overseeing logistics, and ensuring efficiency in all stages of project execution. I also hold an MBA, which has sharpened my ability to make data-driven decisions and enhance business strategies.",
+            "My approach is outcome-driven: reduce operational incidents, shorten cycle times, and let leaner teams accomplish more. When AI takes over the routine work, people are freed to focus on judgment, relationships, and strategy — and organizations operate with lower overhead.",
         },
         {
           inside:
-            "Additionally, as an International Business Consultant, I leverage my global perspective to navigate diverse business environments, building solutions that align with unique client needs and regulatory standards.",
+            "With an MBA and experience as an International Business Consultant, I bridge the gap between technology and the bottom line. Every automation I design is measured against real business impact: cost savings, throughput, and quality.",
         },
         {
           inside:
-            "I’m passionate about implementing the latest technologies and fostering growth. My work has consistently led to improved productivity, streamlined processes, and long-lasting client relationships.",
+            "I’m passionate about building practical AI systems that fit how a business actually works. My goal is always the same — measurable productivity gains, streamlined processes, and operations that scale without scaling complexity.",
         },
       ],
     },

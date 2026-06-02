@@ -14,8 +14,6 @@ import slack from "../components/WorkWidget/WorkLogo/slack.png";
 import spotify from "../components/WorkWidget/WorkLogo/spotify.png";
 import microsoft from "../components/WorkWidget/WorkLogo/microsoft.png";
 import audible from "../components/WorkWidget/WorkLogo/audible.png";
-import css3 from "../components/SkillsWidget/SkillsLogo/css3.png";
-import html5 from "../components/SkillsWidget/SkillsLogo/html5.png";
 import javaS from "../components/SkillsWidget/SkillsLogo/javascript.png";
 import X from "@/components/LinksAbout/LinksImages/XV.svg";
 import GitHub from "@/components/LinksAbout/LinksImages/GitHub.svg";
@@ -34,25 +32,25 @@ export const metadata = {
 export default function Home() {
   const articles = [
     {
-      date: "December 25, 2023",
+      date: "2023 — 2024",
       title: "Chief Operations Officer at Maderas América",
       content:
-        "As COO of a melamine and construction materials company, I managed daily operations across five warehouses, optimized inventory, and supervised machinery maintenance to ensure continuous production. My role extended to overseeing material importation, coordinating with international suppliers, and adhering to import regulations. This position sharpened my skills in inventory management, machinery upkeep, and international trade.",
-      link: "https://medium.com/the-research-nest/everything-you-need-to-know-about-react-ab24da4275ea",
+        "As COO of a melamine and construction materials company, I ran daily operations across five warehouses, optimized inventory, and supervised machinery maintenance to keep production continuous. Managing importation and international suppliers exposed exactly the kind of manual, repetitive coordination that I now automate with AI agents.",
+      link: "#",
     },
     {
-      date: "December 25, 2023",
-      title: "General Manager at HIDROALEMANA S.A.C.",
+      date: "2021 — 2023",
+      title: "Operations Manager at HIDROALEMANA S.A.C.",
       content:
-        "As the Administrator of a hydraulic well solutions company, I managed submersible pump sales, coordinated projects for clients like Alicorp and Nestlé, and ensured precise well management systems. Responsibilities included financial oversight, contract negotiations, and safety compliance, strengthening my skills in strategic management and client relations.",
-      link: "https://medium.com/javascript-scene/the-missing-introduction-to-react-62837cb2fd76",
+        "Leading a hydraulic well-solutions company, I managed submersible pump sales and coordinated projects for clients like Alicorp and Nestlé, overseeing finances, contracts, and safety compliance. Here I learned how much time disappears into manual reporting and follow-ups — the first processes worth automating.",
+      link: "#",
     },
     {
-      date: "December 25, 2023",
-      title: "Administrative Assistant at Inmobiliaria Edifica",
+      date: "2019 — 2021",
+      title: "Operations Assistant at Inmobiliaria Edifica",
       content:
-        "In this real estate role, I efficiently handled client inquiries, coordinated property viewings, and maintained detailed records. I managed essential paperwork and supported agents with meetings and correspondence, honing my multitasking, communication, and problem-solving skills.",
-      link: "https://medium.com/javascript-scene/the-missing-introduction-to-react-62837cb2fd76",
+        "In this real estate role, I handled client inquiries, coordinated viewings, and maintained detailed records and paperwork. Doing high-volume routine work firsthand is what convinced me that intelligent automation, not more headcount, is the real lever for efficiency.",
+      link: "#",
     },
   ];
   //-----------------------------------------------------------------------------------------
@@ -96,8 +94,11 @@ export default function Home() {
   ];
   //----------------------------------------------------------------------------------------------------
   const skills = [
-    { name: "HTML", proficiency: 60, icon: html5 },
-    { name: "CSS", proficiency: 50, icon: css3 },
+    { name: "AI Agents & LLMs", proficiency: 90 },
+    { name: "OpenAI & Anthropic APIs", proficiency: 88 },
+    { name: "Workflow Automation (n8n · Make · Zapier)", proficiency: 90 },
+    { name: "Python", proficiency: 85 },
+    { name: "LangChain & LangGraph", proficiency: 80 },
     { name: "JavaScript", proficiency: 75, icon: javaS },
   ];
   //----------------------------------------------------------------------------------------------------
@@ -155,24 +156,23 @@ export default function Home() {
           {/*End of Navbar First part*/}
           <div className="left-inside-144">
             <ProfileHeader
-              name="Software Engineer | Administrator | Project Engineer | MBA | IB Consultant"
+              name="AI Automation Engineer | Process Optimization | Operations Strategist | MBA"
               bio={
                 <>
                   <span style={{ display: "block", marginBottom: "1em" }}>
-                    Chief of Operations and seasoned Industrial Engineer with a robust background in DevOps and
-                    administrative leadership, I bring a dynamic blend of expertise to the table. My career is marked by
-                    substantial experience in operational management, continuous improvement, and process optimization.
+                    Industrial and software engineer. I design AI agents, lead-generation pipelines, and scalable
+                    systems that help companies grow — without growing their headcount. Having led operations from the
+                    inside, I automate the workflows that actually move the needle.
                   </span>
                   <span style={{ display: "block", marginBottom: "1em" }}>
-                    As a Project Engineer, I have honed my skills in seamlessly integrating project management
-                    principles with technical acumen, ensuring the successful delivery of complex projects. My MBA
-                    education has further enriched my strategic and analytical abilities, enabling me to make
-                    data-driven decisions that propel business growth.
+                    My work focuses on three measurable outcomes: fewer operational incidents, faster cycle times, and
+                    leaner, more efficient teams. By letting AI handle repetitive and rule-based tasks, organizations
+                    free their people for higher-value work and cut operational overhead.
                   </span>
                   <span style={{ display: "block", marginBottom: "1em" }}>
-                    In the realm of international business, my role as an IB Consultant has allowed me to navigate
-                    diverse business environments, fostering a global perspective in my approach to operations and
-                    strategy.
+                    Backed by an MBA and experience as an International Business Consultant, I connect automation to
+                    business strategy — making sure every AI solution translates into real cost savings, productivity
+                    gains, and sustainable growth.
                   </span>
                 </>
               }
@@ -205,14 +205,14 @@ export default function Home() {
               <WorkWidget
                 title={"Work"}
                 content={
-                  "Industrial - Software Engineer with more than seven years of experience optimizing industrial processes with technology and applications."
+                  "AI Automation & Operations Engineer with 7+ years optimizing industrial and business processes — now deploying AI agents to cut incidents, accelerate delivery, and streamline teams."
                 }
                 experiences={myExperience}
               />
               {/*End of WorkWidget*/}
               <SkillsWidget
                 title={"Skills"}
-                content={"My experience in the latest and certified knowledge in different areas."}
+                content={"The AI, automation, and engineering tools I use to turn manual processes into self-running systems."}
                 skills={skills}
               />
               {/*End of SkillsWidget*/}

@@ -20,11 +20,11 @@ export default function Uses() {
 
   const itemsArray = [
     {
-      title: "Software I use, gadgets I love, and other things I recommend.",
+      title: "The AI, automation, and engineering stack I build with.",
       content: [
         {
           inside:
-            "As a Chief of Operations with a strong background in DevOps and industrial engineering, I leverage a variety of tools and methodologies to enhance operational efficiency and drive strategic growth.",
+            "These are the models, frameworks, and platforms I use to put AI agents into real business processes — automating routine work, reducing incidents, and helping teams do more with less.",
         },
       ],
     },
@@ -32,62 +32,62 @@ export default function Uses() {
 
   const items = [
     {
-      groupName: "Operational Management",
+      groupName: "AI Models & APIs",
       items: [
         {
-          title: "Project Management Software",
+          title: "OpenAI & Anthropic (Claude) APIs",
           description:
-            "Tools like Asana and Trello help me manage complex projects seamlessly, ensuring that milestones are met and resources are optimized.",
+            "My primary models for reasoning, classification, and agentic workflows. I design prompts, tool calls, and structured outputs that turn an LLM into a dependable part of a process.",
         },
         {
-          title: "Business Intelligence Tools",
+          title: "Vercel AI SDK & AI Gateway",
           description:
-            "Using platforms like Tableau and Power BI allows me to make data-driven decisions, fostering continuous improvement across all operational processes.",
+            "I build AI features and agents with the AI SDK and route requests through the AI Gateway for provider failover, observability, and cost control across multiple models.",
         },
       ],
     },
     {
-      groupName: "DevOps Practices",
+      groupName: "Agent & Automation Frameworks",
       items: [
         {
-          title: "CI/CD Tools",
+          title: "LangChain & LangGraph",
           description:
-            "Implementing Jenkins and GitLab CI helps streamline deployment processes, bridging the gap between development and operations for high-quality outcomes.",
+            "For building multi-step AI agents with memory, tools, and branching logic — orchestrating how an agent perceives, decides, and acts inside a workflow.",
         },
         {
-          title: "Containerization",
+          title: "n8n, Make & Zapier",
           description:
-            "Utilizing Docker and Kubernetes enhances efficiency and scalability, making it easier to manage applications across various environments.",
+            "Low-code automation platforms I use to connect systems, trigger AI agents, and remove repetitive handoffs end-to-end — fast to ship and easy for teams to maintain.",
         },
       ],
     },
     {
-      groupName: "Collaboration & Communication",
+      groupName: "Data, Retrieval & Backend",
       items: [
         {
-          title: "Slack",
+          title: "Python & Node.js",
           description:
-            "A vital tool for team communication, facilitating collaboration across multidisciplinary teams, promoting a culture of innovation.",
+            "The languages behind my automations and integrations — from data pipelines and API connectors to custom agent tooling and webhooks.",
         },
         {
-          title: "Zoom",
+          title: "Vector Databases & RAG",
           description:
-            "Essential for remote meetings, ensuring clear communication and collaboration with global teams, especially in my role as an IB Consultant.",
+            "Using tools like Supabase (pgvector) and Pinecone to give agents reliable, grounded access to a company's own knowledge through retrieval-augmented generation.",
         },
       ],
     },
     {
-      groupName: "Productivity Tools",
+      groupName: "Delivery & Operations",
       items: [
         {
-          title: "Notion",
+          title: "Vercel, Docker & GitHub Actions",
           description:
-            "Combining notes, tasks, and databases, Notion helps keep my projects organized and ensures that I stay on track with my goals.",
+            "How I ship and run automations reliably — serverless deployment, containerized services, and CI/CD so every solution stays stable in production.",
         },
         {
-          title: "Google Workspace",
+          title: "Process Mapping & BI",
           description:
-            "With tools like Docs, Sheets, and Drive, I streamline collaboration and document management, enhancing productivity across teams.",
+            "Before automating, I map the real workflow and measure it with tools like Power BI — so every AI agent targets the bottleneck with the highest impact on cost and time.",
         },
       ],
     },

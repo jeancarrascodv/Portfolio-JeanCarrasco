@@ -23,11 +23,11 @@ export default function Projects() {
 
   const itemsArray = [
     {
-      title: "Things I’ve made trying to put my dent in the universe.",
+      title: "AI automations I’ve built to make operations run themselves.",
       content: [
         {
           inside:
-            "As an operations leader and project engineer, I have spearheaded various initiatives that blend technology and strategy, aiming to drive innovation and create impactful solutions.",
+            "A selection of projects where I deployed AI agents and intelligent automation into real business processes — reducing incidents, cutting cycle times, and letting leaner teams do more with less overhead.",
         },
       ],
     },
@@ -42,45 +42,46 @@ export default function Projects() {
 
   const projects = [
     {
-      name: "Digital Transformation at Ensign College",
+      name: "AI Agents for Operations Support",
       logo: Logo,
       content:
-        "Led the development of a digital platform to streamline student services and improve administrative efficiency.",
-      link: "https://www.ensign.edu/",
+        "Deployed AI agents to automatically triage, classify, and resolve routine operational tickets — cutting incident response times and reducing the manual workload on the support team.",
+      link: "#",
     },
     {
-      name: "Community Tech Workshops",
+      name: "Intelligent Document & Invoice Processing",
       logo: Logo,
       content:
-        "Organized workshops to teach tech skills to the community, helping people improve their digital literacy.",
-      link: "https://www.communitytechworkshops.com/",
+        "Built an AI pipeline that extracts, validates, and routes data from invoices and contracts — eliminating hours of manual data entry and reducing human error to near zero.",
+      link: "#",
     },
     {
-      name: "Sustainability Efforts",
-      logo: Logo,
-      content: "Helped introduce eco-friendly practices to cut costs and reduce waste.",
-      link: "https://www.ecooptimization.com/",
-    },
-    {
-      name: "Global Operations Optimization",
+      name: "Process Mining & Bottleneck Detection",
       logo: Logo,
       content:
-        "Streamlined international operations, improving productivity across teams and enhancing global collaboration.",
-      link: "https://www.globaloperations.com/",
+        "Used AI to map real operational workflows, surface hidden bottlenecks, and recommend where automation delivers the highest ROI in cost and time savings.",
+      link: "#",
     },
     {
-      name: "DevOps Integration Project",
+      name: "Automated Reporting & KPI Agents",
       logo: Logo,
       content:
-        "Facilitated the adoption of DevOps practices, improving software delivery speed and quality across teams.",
-      link: "https://www.devopstransformation.com/",
+        "Replaced manual reporting cycles with AI agents that gather data, generate insights, and deliver decision-ready dashboards on schedule — freeing teams from repetitive analysis.",
+      link: "#",
     },
     {
-      name: "Innovation Hackathon Organizer",
+      name: "AI-Assisted Customer Operations",
       logo: Logo,
       content:
-        "Organized a hackathon to foster creativity among engineers, resulting in innovative solutions and team bonding.",
-      link: "https://www.innovationhackathon.com/",
+        "Implemented conversational AI to handle first-line inquiries 24/7, escalating only complex cases — improving response times while keeping operations lean.",
+      link: "#",
+    },
+    {
+      name: "Workflow Automation & System Integration",
+      logo: Logo,
+      content:
+        "Connected disconnected business systems with automated workflows and AI orchestration, removing repetitive handoffs and accelerating end-to-end delivery.",
+      link: "#",
     },
   ];
 
